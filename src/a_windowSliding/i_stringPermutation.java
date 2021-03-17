@@ -22,7 +22,7 @@ Input: String="oidbcaf", Pattern="abc"
 Output: true
 Explanation: The string contains "bca" which is a permutation of the given pattern.*/
     public static void main(String[] args) {
-        System.out.println(permutate("abcedf","edc"));
+        System.out.println(permutate("abcgedf","edc"));
     }
 
     private static boolean permutate(String word, String value) {
@@ -36,7 +36,13 @@ Explanation: The string contains "bca" which is a permutation of the given patte
                 if(chars.get(c) == 0) matched++;
             }
             if(matched == chars.size()) return true;
-
+            if(end >= value.length()-1){
+                char d = word.charAt(start ++);
+                if(chars.containsKey(d)){
+                    if(chars.get(d) == 0 ) matched --;
+                    chars.put(d, chars.get(d)+1);
+                }
+            }
         }
         System.out.println(chars);
         return false;
