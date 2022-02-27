@@ -1,5 +1,7 @@
 package b_twoPointer;
 
+import java.util.Arrays;
+
 /*Problem Statement #
 Given an array of sorted numbers, remove all duplicates from it. You should not use any extra space; after removing the duplicates in-place return the new length of the array.
 
@@ -21,7 +23,7 @@ public class b_removeDuplicates {
 				Input: [3, 2, 3, 6, 3, 10, 9, 3], Key=3
 				Output: 4
 				Explanation: The first four elements after removing every 'Key' will be [2, 6, 10, 9].*/
-		System.out.println(removeKey(new int[] {2, 3, 3, 3, 6, 9, 9, 10} , 3));
+		System.out.println(removeKey(new int[] {3, 2, 3, 6, 3, 10, 9, 3} , 3));
 	}
 
 	private static int removeKey(int[] is, int i) {
@@ -32,6 +34,7 @@ public class b_removeDuplicates {
 				a++;
 			}
 		}
+		System.out.println(Arrays.toString(is));
 		return a;
 	}
 
@@ -43,6 +46,7 @@ public class b_removeDuplicates {
 				a++;
 			}
 		}
+		System.out.println(Arrays.toString(is));
 		return a;
 	}
 
