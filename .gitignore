@@ -3,3 +3,5 @@
 .project
 *.class
 bin/b_twoPointer/b_removeDuplicates.class
+bin/b_twoPointer/a_PairTargetSum.class
+*.class

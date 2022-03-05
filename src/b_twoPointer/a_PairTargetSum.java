@@ -16,7 +16,7 @@ Explanation: The numbers at index 1 and 3 add up to 6: 2+4=6*/
 public class a_PairTargetSum {
 
 	public static void main(String[] args) {
-		int[] res = pairTargetSum1(new int[] {1, 2, 3, 4, 6}, 6);
+		int[] res = pairTargetSum(new int[] {1, 2, 3, 4, 6}, 6);
 		System.out.println(res[0] + " "+res[1]);
 	}
 
